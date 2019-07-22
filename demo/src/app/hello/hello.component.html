@@ -1,0 +1,10 @@
+<div class="hello">
+  <input type="text" [(ngModel)]="text" placeholder="Saisissez votre text"> 
+
+  <p [style.color]="text === 'toto' ? 'red' : 'green'">{{ text }}</p>
+
+  <button [disabled]="!text.length">Click me</button>
+
+  {{ sayHello('toto') }}
+
+</div>
