@@ -1,5 +1,5 @@
 <div class="hello">
-  <input type="text" [(ngModel)]="text" placeholder="Saisissez votre text"> 
+  <input type="text" [(ngModel)]="text" placeholder="Saisissez votre text">
 
   <p [style.color]="text === 'toto' ? 'red' : 'green'">{{ text }}</p>
 
@@ -8,3 +8,7 @@
   {{ sayHello('toto') }}
 
 </div>
+
+<input [ngStyle]="" [ngClass]="" type="text" [(ngModel)]="title">
+<textarea cols="30" rows="10" [(ngModel)]="content"></textarea>
+{{ content.length }}/140
