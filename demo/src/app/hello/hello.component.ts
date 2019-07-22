@@ -20,6 +20,13 @@ export class HelloComponent implements OnInit {
   ngOnInit() {
   }
 
+  toast(event: Event): void {
+    console.log(event);
+
+    const button = event.target as HTMLButtonElement;
+    button.style.backgroundColor = 'yellow';
+  }
+
   sayHello(name: string): string {
     return 'Hello ' + name;
   }

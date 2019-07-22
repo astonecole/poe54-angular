@@ -3,7 +3,7 @@
 
   <p [style.color]="text === 'toto' ? 'red' : 'green'">{{ text }}</p>
 
-  <button [disabled]="!text.length">Click me</button>
+  <button (click)="toast($event)" [disabled]="!text.length">Click me</button>
 
   {{ sayHello('toto') }}
 
