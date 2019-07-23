@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
 import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
@@ -13,6 +14,7 @@ import { DemoBindingComponent } from './demo-binding/demo-binding.component';
 import { NavbarComponent } from './layouts/navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
+import { ChucknorrisComponent } from './chucknorris/chucknorris.component';
 
 @NgModule({
   declarations: [
@@ -25,12 +27,14 @@ import { AboutComponent } from './about/about.component';
     DemoBindingComponent,
     NavbarComponent,
     HomeComponent,
-    AboutComponent
+    AboutComponent,
+    ChucknorrisComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
