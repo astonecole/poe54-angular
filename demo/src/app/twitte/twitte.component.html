@@ -1,0 +1,17 @@
+<div>
+  <div>
+    <input type="text" [(ngModel)]="title" placeholder="title" maxLength="15">
+  </div>
+  <div>
+    <textarea [ngClass]="{'error': content.length === text.maxLength }" cols="30" rows="5" [(ngModel)]="content"
+      maxLength="10" #text></textarea>
+  </div>
+
+  <button (click)="onSend()" [disabled]="!(title && content)">Ajouter</button> {{ content.length }}/{{ text.maxLength }}
+
+  <!--
+    [style.borderColor]="content.length === text.maxLength ? 'red' : '#ccc' "
+    [ngStyle]="{'border-color': content.length === text.maxLength ? 'red' : '#ccc' }"
+    [ngClass]="{'error': content.length === text.maxLength }"
+  -->
+</div>

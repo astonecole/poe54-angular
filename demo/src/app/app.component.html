@@ -1,13 +1,9 @@
 <div>
 
-  <app-hello></app-hello>
+  <app-twitte (twitte)="saveTwitte($event)"></app-twitte>
 
   <app-box [title]="'Lorem Title'">
     <p>Hello World</p>
-  </app-box>
-
-  <app-box>
-    <div>Bonjour le monde</div>
   </app-box>
 
   <!-- 
