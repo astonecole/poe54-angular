@@ -1,0 +1,15 @@
+<div>
+  <h2>Two Data Binding</h2>
+
+  <div>
+    <label>Avec NgModel</label>
+    <input type="text" [(ngModel)]="name">
+  </div>
+
+  <div>
+    <label>Sans NgModel</label>
+    <input type="text" (input)="updateName($event)">
+  </div>
+
+  {{ name }}
+</div>

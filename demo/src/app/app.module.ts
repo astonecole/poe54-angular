@@ -9,6 +9,10 @@ import { BoxComponent } from './box/box.component';
 import { TwitteComponent } from './twitte/twitte.component';
 import { Html2brPipe } from './pipes/html2br.pipe';
 import { KeepHtmlPipe } from './pipes/keep-html.pipe';
+import { DemoBindingComponent } from './demo-binding/demo-binding.component';
+import { NavbarComponent } from './layouts/navbar/navbar.component';
+import { HomeComponent } from './home/home.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +21,11 @@ import { KeepHtmlPipe } from './pipes/keep-html.pipe';
     BoxComponent,
     TwitteComponent,
     Html2brPipe,
-    KeepHtmlPipe
+    KeepHtmlPipe,
+    DemoBindingComponent,
+    NavbarComponent,
+    HomeComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

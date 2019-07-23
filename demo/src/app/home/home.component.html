@@ -1,0 +1,13 @@
+<app-demo-binding></app-demo-binding>
+<app-twitte (twitte)="saveTwitte($event)"></app-twitte>
+
+<app-box *ngFor="let message of twittes" [title]="message.title">
+  <p [innerHTML]="message.content | html2br | keepHtml"></p>
+  <!-- <p>{{ message.content | html2br | keepHtml }}</p> -->
+</app-box>
+
+<!--
+    <app-hello></app-hello>       selector: "app-hello"
+    <div app-hello></div>         selector: "[app-hello]"
+    <div class="app-hello"></div> selector: ".app-hello"
+-->
