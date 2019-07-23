@@ -7,13 +7,17 @@ import { AppComponent } from './app.component';
 import { HelloComponent } from './hello/hello.component';
 import { BoxComponent } from './box/box.component';
 import { TwitteComponent } from './twitte/twitte.component';
+import { Html2brPipe } from './pipes/html2br.pipe';
+import { KeepHtmlPipe } from './pipes/keep-html.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     HelloComponent,
     BoxComponent,
-    TwitteComponent
+    TwitteComponent,
+    Html2brPipe,
+    KeepHtmlPipe
   ],
   imports: [
     BrowserModule,

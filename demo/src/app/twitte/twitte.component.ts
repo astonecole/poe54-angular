@@ -1,4 +1,5 @@
 import { Component, Output, EventEmitter, OnInit } from '@angular/core';
+import { Message } from '../models/message.model';
 
 @Component({
   selector: 'app-twitte',
@@ -9,7 +10,7 @@ export class TwitteComponent implements OnInit {
   title = '';
   content = '';
 
-  @Output() twitte: EventEmitter<{ title: string, content: string }> = new EventEmitter();
+  @Output() twitte: EventEmitter<Message> = new EventEmitter<Message>();
 
   constructor() { }
 
@@ -20,5 +21,8 @@ export class TwitteComponent implements OnInit {
       title: this.title,
       content: this.content
     });
+
+    this.title = '';
+    this.content = '';
   }
 }

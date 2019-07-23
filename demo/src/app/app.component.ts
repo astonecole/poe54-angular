@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Message } from './models/message.model';
 
 @Component({
   selector: 'app-root',
@@ -8,9 +9,9 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'demo';
   name: string;
-  twittes: { title: string, content: string }[] = [];
+  twittes: Message[] = [];
 
-  saveTwitte(data: { title: string, content: string }): void {
-    this.twittes.push(data);
+  saveTwitte(message: Message): void {
+    this.twittes.push(message);
   }
 }
