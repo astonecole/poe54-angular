@@ -15,7 +15,8 @@ import {
   MatCardModule,
   MatFormFieldModule,
   MatNativeDateModule,
-  MatDatepickerModule
+  MatDatepickerModule,
+  MAT_DATE_LOCALE
 } from '@angular/material';
 
 import { AppComponent } from './app.component';
@@ -50,7 +51,9 @@ import { ListComponent } from './components/jobs/list/list.component';
     MatNativeDateModule,
     MatDatepickerModule
   ],
-  providers: [],
+  providers: [
+    { provide: MAT_DATE_LOCALE, useValue: 'fr-FR' },
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
