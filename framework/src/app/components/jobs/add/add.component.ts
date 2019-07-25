@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { FormGroup, FormBuilder } from '@angular/forms';
+import { Router } from '@angular/router';
+import { Job } from '../models/job.model';
+
 import { contractData, ContractType } from '../models/contract-type.model';
 
 @Component({
@@ -8,9 +12,19 @@ import { contractData, ContractType } from '../models/contract-type.model';
 })
 export class AddComponent implements OnInit {
   contractTypeData: ContractType[] = contractData;
+  form: FormGroup;
 
-  constructor() { }
+  constructor(
+    private router: Router,
+    private formBuilder: FormBuilder
+  ) { }
 
-  ngOnInit() { }
+  ngOnInit() {
+    this.form = this.formBuilder.group(new Job());
+  }
+
+  onSave(): void {
+    
+  }
 
 }
