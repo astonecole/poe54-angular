@@ -1,3 +1,7 @@
+<input type="text" appInputText [(ngModel)]="inputText">
+
+<p appToggleText [color]="'red'" [txt]="inputText">Hello World</p>
+
 <app-demo-binding></app-demo-binding>
 <app-twitte (twitte)="saveTwitte($event)"></app-twitte>
 

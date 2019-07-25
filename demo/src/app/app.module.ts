@@ -15,6 +15,8 @@ import { NavbarComponent } from './layouts/navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ChucknorrisComponent } from './chucknorris/chucknorris.component';
+import { InputTextDirective } from './directives/input-text.directive';
+import { ToggleTextDirective } from './directives/toggle-text.directive';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { ChucknorrisComponent } from './chucknorris/chucknorris.component';
     NavbarComponent,
     HomeComponent,
     AboutComponent,
-    ChucknorrisComponent
+    ChucknorrisComponent,
+    InputTextDirective,
+    ToggleTextDirective
   ],
   imports: [
     BrowserModule,
