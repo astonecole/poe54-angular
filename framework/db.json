@@ -4,6 +4,17 @@
       "title": "A new Job",
       "name": "John Doe",
       "id": 1
+    },
+    {
+      "title": "test",
+      "company": "Aston",
+      "city": "Lille",
+      "zipcode": "59160",
+      "description": "sdfdsfdsfsd",
+      "contractType": 3,
+      "startDate": "2019-07-25T12:17:31.164Z",
+      "publishedDate": "2019-07-25T12:17:31.164Z",
+      "id": 2
     }
   ]
 }
