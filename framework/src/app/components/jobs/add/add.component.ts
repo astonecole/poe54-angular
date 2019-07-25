@@ -24,7 +24,6 @@ export class AddComponent implements OnInit {
   }
 
   onSave(): void {
-    
+    console.log(this.form.value);
   }
-
 }

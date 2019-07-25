@@ -8,6 +8,6 @@ export class Job {
     zipcode = '';
     description = '';
     contractType: ContractType = new ContractType();
-    startDate: Date;
-    publishedDate: Date;
+    startDate: Date = new Date();
+    publishedDate: Date = new Date();
 }
