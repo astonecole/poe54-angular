@@ -30,6 +30,24 @@
         <textarea matInput></textarea>
       </mat-form-field>
 
+      <mat-form-field>
+        <mat-label>Date de départ</mat-label>
+        <input [matDatepicker]="picker" type="date" matInput maxLength="20" placeholder="59160" required>
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Type de contrat</mat-label>
+        <mat-select>
+          <mat-option *ngFor="let item of contractTypeData" [value]="item.id">
+            {{item.label}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <button mat-button>Sauvegarder</button>
+
     </form>
   </mat-card-content>
 
