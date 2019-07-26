@@ -11,6 +11,6 @@ export class JobsService {
   constructor(private http: HttpClient) { }
 
   add(job: Job): Observable<Job> {
-    return this.http.post<Job>('http://localhost:3000/jobs', job);
+    return this.http.post<Job>('/jobs', job);
   }
 }
