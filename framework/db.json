@@ -1,15 +1,3 @@
 {
-  "jobs": [
-    {
-      "title": "test",
-      "company": "Aston",
-      "city": "Lomme",
-      "zipcode": "59160",
-      "description": "Test",
-      "contractType": 4,
-      "startDate": "2019-07-29T21:39:40.665Z",
-      "publishedDate": "2019-07-29T21:39:40.665Z",
-      "id": 1
-    }
-  ]
+  "jobs": []
 }

@@ -1,5 +1,4 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { Router } from '@angular/router';
 import { MatTableDataSource, MatTable } from '@angular/material';
 
 import { JobsService } from 'src/app/services/jobs.service';
@@ -14,12 +13,9 @@ export class ListComponent implements OnInit {
   displayedColumns: string[] = ['id', 'title', 'company', 'zipcode', 'startDate', 'remove'];
   jobs: MatTableDataSource<Job>;
 
-  @ViewChild(MatTable, { static: false }) table: MatTable<any>;
+  @ViewChild(MatTable, { static: false }) table: MatTable<Job[]>;
 
-  constructor(
-    private router: Router,
-    private jobsService: JobsService
-  ) { }
+  constructor(private jobsService: JobsService) { }
 
   ngOnInit() {
     this.reset();
