@@ -26,10 +26,13 @@ export class AddComponent implements OnInit {
   }
 
   onSave(): void {
-    // console.log(this.form.value);
     this.jobsService.add(this.form.value).subscribe(
-      (job: Job) => console.log(job),
-      err => console.log(err)
+      (job: Job) => {
+        this.router.navigate(['/jobs/list']);
+      },
+      err => {
+        console.log(err);
+      }
     );
 
     this.form.reset();

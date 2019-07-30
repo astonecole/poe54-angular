@@ -16,6 +16,6 @@ export class SidenavComponent {
       share()
     );
 
-  constructor(private breakpointObserver: BreakpointObserver) {}
+  constructor(private breakpointObserver: BreakpointObserver) { }
 
 }

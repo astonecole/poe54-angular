@@ -1,31 +1,15 @@
 {
   "jobs": [
     {
-      "title": "A new Job",
-      "name": "John Doe",
-      "id": 1
-    },
-    {
       "title": "test",
-      "company": "Aston",
-      "city": "Lille",
-      "zipcode": "59160",
-      "description": "sdfdsfdsfsd",
-      "contractType": 3,
-      "startDate": "2019-07-25T12:17:31.164Z",
-      "publishedDate": "2019-07-25T12:17:31.164Z",
-      "id": 2
-    },
-    {
-      "title": "foo@gmail.com",
       "company": "Aston",
       "city": "Lomme",
       "zipcode": "59160",
-      "description": "",
+      "description": "Test",
       "contractType": 4,
-      "startDate": "2019-07-26T09:32:10.727Z",
-      "publishedDate": "2019-07-26T09:32:10.727Z",
-      "id": 3
+      "startDate": "2019-07-29T21:39:40.665Z",
+      "publishedDate": "2019-07-29T21:39:40.665Z",
+      "id": 1
     }
   ]
 }

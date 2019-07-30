@@ -1,1 +1,45 @@
-<p>list works!</p>
+<a mat-mini-fab color="primary" [routerLink]="'/jobs/add'">
+  <mat-icon class="example-icon" aria-hidden="false" aria-label="Example user verified icon">add</mat-icon>
+</a>
+
+<table *ngIf="jobs.data.length" mat-table [dataSource]="jobs" class="mat-elevation-z8">
+
+  <ng-container matColumnDef="id">
+    <th mat-header-cell *matHeaderCellDef> # </th>
+    <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="title">
+    <th mat-header-cell *matHeaderCellDef> Title </th>
+    <td mat-cell *matCellDef="let element"> {{element.title}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="company">
+    <th mat-header-cell *matHeaderCellDef> Company </th>
+    <td mat-cell *matCellDef="let element"> {{element.company}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="zipcode">
+    <th mat-header-cell *matHeaderCellDef> Zipcode </th>
+    <td mat-cell *matCellDef="let element"> {{element.zipcode}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="startDate">
+    <th mat-header-cell *matHeaderCellDef> Start Date </th>
+    <td mat-cell *matCellDef="let element"> {{element.startDate | date:"dd/MM/yyyy" }} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="remove">
+    <th mat-header-cell *matHeaderCellDef> Remove </th>
+    <td mat-cell *matCellDef="let element">
+      <button mat-button (click)="remove(element)">
+        <mat-icon aria-hidden="false" aria-label="Remove this job">delete</mat-icon>
+      </button>
+    </td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>
+
+<h1 *ngIf="!jobs.data.length">No Jobs Provided</h1>

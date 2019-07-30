@@ -23,6 +23,8 @@ import {
   MatFormFieldModule,
   MatNativeDateModule,
   MatDatepickerModule,
+  MatDividerModule,
+  MatTableModule,
   MAT_DATE_LOCALE
 } from '@angular/material';
 
@@ -52,6 +54,7 @@ import { ListComponent } from './components/jobs/list/list.component';
     LayoutModule,
     MatCardModule,
     MatToolbarModule,
+    MatIconModule,
     MatButtonModule,
     MatSidenavModule,
     MatSelectModule,
@@ -60,7 +63,9 @@ import { ListComponent } from './components/jobs/list/list.component';
     MatInputModule,
     MatFormFieldModule,
     MatNativeDateModule,
-    MatDatepickerModule
+    MatDatepickerModule,
+    MatDividerModule,
+    MatTableModule
   ],
   providers: [
     { provide: MAT_DATE_LOCALE, useValue: 'fr-FR' },
